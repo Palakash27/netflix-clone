@@ -17,7 +17,8 @@ function Card({ movieData, index, isLiked = false }) {
         >
             <img
                 src={`https://image.tmdb.org/t/p/w500${movieData.image}`}
-                alt={movieData.title}
+                alt={movieData.name}
+                onClick={() => navigate("/player")}
             />
             {isHovered && (
                 <div className="hover">

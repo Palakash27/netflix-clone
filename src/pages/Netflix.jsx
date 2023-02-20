@@ -19,13 +19,13 @@ export default function Netflix() {
 
     useEffect(() => {
         dispatch(getGenres());
-    }, []);
+    });
 
     useEffect(() => {
         if (genresLoaded) {
             dispatch(fetchMovies({ type: "all" }));
         }
-    });
+    }, [genresLoaded, dispatch]);
 
     useEffect(() => {
         const onScroll = () => {

@@ -100,7 +100,7 @@ const Container = styled.div`
                 color: white;
                 .container {
                     gap: 2rem;
-                    .input {
+                    input {
                         padding: 0.5rem 1rem;
                         width: 15rem;
                     }

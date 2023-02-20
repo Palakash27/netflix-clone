@@ -11,6 +11,7 @@ import { firebaseAuth } from "../utils/firebase-config";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { removeFromLikedMovies } from "../store";
+import video from "../assets/video.mp4";
 
 function Card({ movieData, index, isLiked = false }) {
     const [isHovered, setIsHovered] = useState(false);
@@ -56,7 +57,7 @@ function Card({ movieData, index, isLiked = false }) {
                             onClick={() => navigate("/player")}
                         />
                         <video
-                            // src={video}
+                            src={video}
                             autoPlay
                             loop
                             muted

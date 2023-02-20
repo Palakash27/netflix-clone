@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { BsArrowLeft } from "react-icons/bs";
-// import video from "../assets/video.mp4";
+import video from "../assets/video.mp4";
 import { useNavigate } from "react-router-dom";
 
 export default function Player() {
@@ -13,13 +13,7 @@ export default function Player() {
                 <div className="back">
                     <BsArrowLeft onClick={() => navigate(-1)} />
                 </div>
-                <video
-                    src={"https://www.youtube.com/watch?v=um1xGF-GFhg"}
-                    controls
-                    autoPlay
-                    loop
-                    muted
-                />
+                <video src={video} controls autoPlay loop muted />
             </div>
         </Container>
     );
